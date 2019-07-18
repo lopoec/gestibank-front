@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConseillerService } from 'src/app/services/conseiller.service';
+import { Requete } from 'src/app/models/Requete';
 
 @Component({
   selector: 'app-conseiller-main-menu',
@@ -7,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConseillerMainMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private conseillerService: ConseillerService) { }
 
   ngOnInit() {
   }
-
 }

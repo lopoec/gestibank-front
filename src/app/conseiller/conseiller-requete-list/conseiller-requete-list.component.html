@@ -1,0 +1,20 @@
+<h2>Liste des requetes</h2>
+<div class="col-6">
+        <table>
+            <thead>
+              <tr>
+                <th>Numéro</th>
+                <th>Message</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr *ngFor="let requete of requetes">
+                <td>{{requete.id}}</td>
+                <td>{{requete.message}}</td>
+                <td>{{requete.type}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
