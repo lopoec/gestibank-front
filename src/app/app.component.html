@@ -1,11 +1,15 @@
-<div>
-  <ul>
-    <a><li>Home</li></a>
-    <a><li>Admin</li></a>
-    <a><li>Conseiller</li></a>
-    <a><li>Client</li></a>
-  </ul>
-  <router-outlet></router-outlet>
+<nav>
+  <div class="nav-wrapper teal">
+    <a href="#" class="brand-logo">GESTIBANK</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="./">HOME</a></li>
+      <li><a href="./admin">ADMINISTRATEUR</a></li>
+      <li><a href="./conseiller">CONSEILLER</a></li>
+      <li><a href="">CLIENT</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<router-outlet></router-outlet>
 </div>
-
-
