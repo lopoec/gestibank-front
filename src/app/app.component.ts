@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gestiBankProject';
+  isIdentified = localStorage.getItem('isIdentified');
+
+  constructor(private router: Router){}
+
+  logout(){
+    localStorage.setItem('isIdentified', 'false');
+    this.router.navigate(['conseiller/connect']);
+  }
 }

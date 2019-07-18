@@ -6,13 +6,18 @@ import { ConseillerConnectComponent } from './conseiller/conseiller-connect/cons
 import { ConseillerInfoComponent } from './conseiller/conseiller-info/conseiller-info.component';
 import { ConseillerRequeteListComponent } from './conseiller/conseiller-requete-list/conseiller-requete-list.component';
 import { ConseillerDemandeouvertureListComponent } from './conseiller/conseiller-demandeouverture-list/conseiller-demandeouverture-list.component';
+import { AuthService } from './services/auth.service';
+import { AuthGuardService } from './services/auth-guard.service';
+
+
 
 const routes: Routes = [
   { path:'', component: InscriptionComponent},
   { path:'admin', component: AdminMainMenuComponent},
-  { path:'conseiller', component: ConseillerInfoComponent},
-  { path:'conseiller/requetes', component: ConseillerRequeteListComponent},
-  { path:'conseiller/demandes', component: ConseillerDemandeouvertureListComponent}
+  { path:'conseiller', component: ConseillerInfoComponent, canActivate: [AuthGuardService]},
+  { path:'conseiller/connect', component: ConseillerConnectComponent},
+  { path:'conseiller/requetes', component: ConseillerRequeteListComponent, canActivate: [AuthGuardService]},
+  { path:'conseiller/demandes', component: ConseillerDemandeouvertureListComponent, canActivate: [AuthGuardService]}
 ];
 
 @NgModule({

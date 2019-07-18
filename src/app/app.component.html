@@ -6,6 +6,7 @@
       <li><a href="./admin">ADMINISTRATEUR</a></li>
       <li><a href="./conseiller">CONSEILLER</a></li>
       <li><a href="">CLIENT</a></li>
+      <li *ngIf="isIdentified == 'true'"><button (click)="logout()">Deconnexion</button></li>
     </ul>
   </div>
 </nav>

@@ -6,13 +6,18 @@ import { User } from '../models/User';
   providedIn: 'root'
 })
 export class AuthService {
-  //user : User;
-  isIdentified: boolean;
+  user : User = new User(0,"","","","","","","","Conseiller");
+  //isIdentified: boolean = false;
+  ngOnInit() {
+    localStorage.setItem("isIdentified", "false");
+  }
 
   constructor(private httpClient: HttpClient) { }
 
   login(){
-    //return this.httpClient.get<User>("http://localhost:8080/checkLogin");
+    /*this.httpClient.get<User>("http://localhost:8080/checkLogin").subscribe(
+      reponse => this.user = reponse
+    );*/
   }
 
   isAuth(){
