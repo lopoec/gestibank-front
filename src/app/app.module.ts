@@ -11,6 +11,9 @@ import { ConseillerService } from './services/conseiller.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ConseillerConnectComponent } from './conseiller/conseiller-connect/conseiller-connect.component';
 import { ConseillerRequeteListComponent } from './conseiller/conseiller-requete-list/conseiller-requete-list.component';
+import { ConseillerDemandeouvertureListComponent } from './conseiller/conseiller-demandeouverture-list/conseiller-demandeouverture-list.component';
+import { ConseillerCompteComponent } from './conseiller/conseiller-compte/conseiller-compte.component';
+import { ConseillerClientComponent } from './conseiller/conseiller-client/conseiller-client.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ConseillerRequeteListComponent } from './conseiller/conseiller-requete-
     ConseillerInfoComponent,
     ConseillerMainMenuComponent,
     ConseillerConnectComponent,
-    ConseillerRequeteListComponent
+    ConseillerRequeteListComponent,
+    ConseillerDemandeouvertureListComponent,
+    ConseillerCompteComponent,
+    ConseillerClientComponent
   ],
   imports: [
     BrowserModule,
