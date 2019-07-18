@@ -10,6 +10,7 @@ import { ConseillerMainMenuComponent } from './conseiller/conseiller-main-menu/c
 import { ConseillerService } from './services/conseiller.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ConseillerConnectComponent } from './conseiller/conseiller-connect/conseiller-connect.component';
+import { ConseillerRequeteListComponent } from './conseiller/conseiller-requete-list/conseiller-requete-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConseillerConnectComponent } from './conseiller/conseiller-connect/cons
     AdminMainMenuComponent,
     ConseillerInfoComponent,
     ConseillerMainMenuComponent,
-    ConseillerConnectComponent
+    ConseillerConnectComponent,
+    ConseillerRequeteListComponent
   ],
   imports: [
     BrowserModule,
