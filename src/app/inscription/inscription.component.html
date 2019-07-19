@@ -12,6 +12,11 @@
       </div>
     
       <div class="form-group">
+        <label for="email">E-mail :</label>
+        <input [(ngModel)]="clientPotentiel.email" placeholder="Email" name="email" class="form-control" id="email">
+      </div>
+
+      <div class="form-group">
         <label for="adresse">Adresse :</label>
         <input [(ngModel)]="clientPotentiel.adresse" placeholder="Adresse" name="adresse" class="form-control" id="adresse">
       </div>
@@ -22,8 +27,13 @@
       </div>
 
       <div class="form-group">
-        <label for="revenu mensuel">Revenu mensuel :</label>
-        <input [(ngModel)]="clientPotentiel.revenuMensuel" placeholder="RevenuMensuel" name="revenuMensuel" class="form-control" id="revenuMensuel">
+        <label for="revenuMens">Revenu mensuel :</label>
+        <input [(ngModel)]="clientPotentiel.revenuMens" placeholder="RevenuMens" name="revenuMens" class="form-control" id="revenuMens">
+      </div>
+
+      <div class="form-group">
+        <label for="piecesJustif">Revenu mensuel :</label>
+        <input [(ngModel)]="clientPotentiel.piecesJustif" placeholder="piecesJustif" name="piecesJustif" class="form-control" id="piecesJustif">
       </div>
 
       <button class="btn btn-success" (click)="createClientPotentiel()">Valider ma demande</button>
