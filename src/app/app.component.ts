@@ -14,6 +14,7 @@ export class AppComponent {
 
   logout(){
     localStorage.setItem('isIdentified', 'false');
+    this.isIdentified = localStorage.getItem('isIdentified');
     this.router.navigate(['conseiller/connect']);
   }
 }

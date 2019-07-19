@@ -8,13 +8,14 @@ import { ConseillerRequeteListComponent } from './conseiller/conseiller-requete-
 import { ConseillerDemandeouvertureListComponent } from './conseiller/conseiller-demandeouverture-list/conseiller-demandeouverture-list.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
+import { ConseillerPageAcceuilComponent } from './conseiller/conseiller-page-acceuil/conseiller-page-acceuil.component';
 
 
 
 const routes: Routes = [
   { path:'', component: InscriptionComponent},
   { path:'admin', component: AdminMainMenuComponent},
-  { path:'conseiller', component: ConseillerInfoComponent, canActivate: [AuthGuardService]},
+  { path:'conseiller', component: ConseillerPageAcceuilComponent, canActivate: [AuthGuardService]},
   { path:'conseiller/connect', component: ConseillerConnectComponent},
   { path:'conseiller/requetes', component: ConseillerRequeteListComponent, canActivate: [AuthGuardService]},
   { path:'conseiller/demandes', component: ConseillerDemandeouvertureListComponent, canActivate: [AuthGuardService]}

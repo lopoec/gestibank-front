@@ -11,8 +11,8 @@ export class ConseillerService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getConseiller(){
-    return this.httpClient.get<Conseiller>("http://localhost:8080/SpringJPAWebService/conseiller/123456");
+  getConseiller(id){
+    return this.httpClient.get<Conseiller>("http://localhost:8080/SpringJPAWebService/conseiller/"+id+"/");
   }
 
   getRequetes(){
@@ -22,6 +22,8 @@ export class ConseillerService {
   getDemandes(){
     return this.httpClient.get<Demande[]>("http://localhost:8080/SpringJPAWebService/conseiller/demandes");
   }
+
+
 
   
 }
