@@ -1,24 +1,11 @@
-export class ClientPotentiel {
-    id: number;
-    nom: String;
-    prenom: String;
-    email: String;
-    adresse: String;
-    telephone: String;
-    revenuMensuel: BigInteger;
-    
-    constructor(id: number,
-        nom: String,
-        prenom: String,
-        email: String,
-        adresse: String,
-        telephone: String,
-        revenuMensuel: BigInteger) {
-            this.nom = nom;
-            this.prenom = prenom;
-            this.email = email;
-            this.adresse = adresse;
-            this.telephone = telephone;
-            this.revenuMensuel = revenuMensuel;
-        }
-}
+export class ClientPotentiel{
+    constructor(
+      public nom:string,
+      public prenom:string,
+      public email:string,
+      public adresse:string,
+      public telephone:string,
+      public revenuMens:string,
+      public piecesJustif:string,
+    ) {}
+  }
