@@ -1,0 +1,52 @@
+<h2>Liste des demandes d'ouverture de compte</h2>
+<div class="col-6">
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Revenu</th>
+        <th>Conseiller</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let demande of demandes">
+        <td>{{ demande.clientPotentiel.nom }}</td>
+        <td>{{ demande.clientPotentiel.prenom }}</td>
+        <td>{{ demande.clientPotentiel.revenuMens }}</td>
+        <td>
+          <form action="">
+            <select class="balise">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Select</label>
+          </form>
+
+          <!-- <select id="l" name="l" [(ngModel)]="selectedValue">
+                            <option [ngValue]="null">Veuillez choiosir</option>
+                            <option *ngFor="let c of conseillers" [ngValue]="c">{{c.nom}}</option>
+                        </select> -->
+        </td>
+        <td>
+          <button class="waves-effect waves-light btn" routerLink="">
+            Détails
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form action="">
+        <select class="balise">
+          <option value="" disabled selected>Choisir une option</option>
+          <option *ngFor="let c of conseillers" >{{ c.nom }} </option>
+        </select>
+        <label>Materialize Select</label>
+      </form>
+
+</div>

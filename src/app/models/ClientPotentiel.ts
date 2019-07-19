@@ -5,7 +5,7 @@ export class ClientPotentiel {
     email: String;
     adresse: String;
     telephone: String;
-    revenuMensuel: BigInteger;
+    revenuMens: BigInteger;
     
     constructor(id: number,
         nom: String,
@@ -13,12 +13,12 @@ export class ClientPotentiel {
         email: String,
         adresse: String,
         telephone: String,
-        revenuMensuel: BigInteger) {
+        revenuMens: BigInteger) {
             this.nom = nom;
             this.prenom = prenom;
             this.email = email;
             this.adresse = adresse;
             this.telephone = telephone;
-            this.revenuMensuel = revenuMensuel;
+            this.revenuMens = revenuMens;
         }
 }
