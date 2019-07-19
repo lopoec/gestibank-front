@@ -7,6 +7,7 @@
                 <th>Prénom</th>
                 <th>Revenu</th>
                 <th>Action</th>
+                <th>{{demandes}}</th>
               </tr>
             </thead>
     
@@ -14,7 +15,7 @@
               <tr *ngFor="let demande of demandes">
                 <td>{{demande.clientPotentiel.nom}}</td>
                 <td>{{demande.clientPotentiel.prenom}}</td>
-                <td>{{demande.revenu}}</td>
+                <td>{{demande.clientPotentiel.revenu}}</td>
                 <td><button class="waves-effect waves-light btn" routerLink="">Valider</button></td>
               </tr>
             </tbody>

@@ -19,8 +19,9 @@ export class ConseillerService {
     return this.httpClient.get<Requete[]>("http://localhost:8080/SpringJPAWebService/conseiller/requetes");
   }
 
-  getDemandes(){
-    return this.httpClient.get<Demande[]>("http://localhost:8080/SpringJPAWebService/conseiller/demandes");
+  getDemandes(matricule){
+    console.log(matricule+" in service");
+    return this.httpClient.get<Demande[]>("http://localhost:8080/SpringJPAWebService/conseiller/demandesouvertures/"+matricule);
   }
 
 

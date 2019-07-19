@@ -14,8 +14,11 @@ export class ConseillerDemandeouvertureListComponent implements OnInit {
   constructor(private conseillerService: ConseillerService) { }
 
   ngOnInit() {
-    this.conseillerService.getDemandes().subscribe(
-      reponse => this.demandes = reponse
+    this.conseillerService.getDemandes(localStorage.getItem("matricule")).subscribe(
+      reponse => {
+        this.demandes = reponse;
+        console.log(this.demandes[0]);
+      }
     )
   }
 
