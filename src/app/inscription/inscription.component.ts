@@ -7,7 +7,7 @@ import {InscriptionService, ClientPotentiel} from '../services/inscription.servi
   styleUrls: ['./inscription.component.css']
 })
 export class InscriptionComponent implements OnInit {
-  clientPotentiel: ClientPotentiel = new ClientPotentiel("","","","", "", "");
+  clientPotentiel: ClientPotentiel = new ClientPotentiel("","","","", "", "", "");
 
   constructor(private inscriptionService: InscriptionService) { }
 
