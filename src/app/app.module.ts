@@ -15,6 +15,7 @@ import { ConseillerDemandeouvertureListComponent } from './conseiller/conseiller
 import { ConseillerCompteComponent } from './conseiller/conseiller-compte/conseiller-compte.component';
 import { ConseillerClientComponent } from './conseiller/conseiller-client/conseiller-client.component';
 import { ConseillerPageAcceuilComponent } from './conseiller/conseiller-page-acceuil/conseiller-page-acceuil.component';
+import { AdminDemandeouvertureListComponent } from './admin/admin-demandeouverture-list/admin-demandeouverture-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ConseillerPageAcceuilComponent } from './conseiller/conseiller-page-acc
     ConseillerDemandeouvertureListComponent,
     ConseillerCompteComponent,
     ConseillerClientComponent,
-    ConseillerPageAcceuilComponent
+    ConseillerPageAcceuilComponent,
+    AdminDemandeouvertureListComponent
   ],
   imports: [
     BrowserModule,
