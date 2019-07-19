@@ -2,11 +2,11 @@
   <div class="nav-wrapper teal">
     <a href="#" class="brand-logo">GESTIBANK</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="./">HOME</a></li>
-      <li><a href="./admin">ADMINISTRATEUR</a></li>
-      <li><a href="./conseiller">CONSEILLER</a></li>
-      <li><a href="">CLIENT</a></li>
-      <li *ngIf="isIdentified == 'true'"><button (click)="logout()">Deconnexion</button></li>
+      <li><a routerLink="./">HOME</a></li>
+      <li><a routerLink="./admin">ADMINISTRATEUR</a></li>
+      <li><a routerLink="./conseiller">CONSEILLER</a></li>
+      <li><a routerLink="./">CLIENT</a></li>
+      <li *ngIf="isIdentified == 'true'"><button class="waves-effect waves-light btn" (click)="logout()">Deconnexion</button></li>
     </ul>
   </div>
 </nav>

@@ -7,16 +7,16 @@
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">account_circle</i>
-              <input placeholder="pseudo" id="pseudo" type="text" class="validate">
+              <input placeholder="pseudo" id="pseudo" name="pseudo" type="text" class="validate" [(ngModel)]="pseudo">
               <label for="pseudo">Nom utilisateur</label>
             </div>
             <div class="input-field col s6">
               <i class="material-icons prefix">https</i>
-              <input placeholder="Mot de passe" id="mdp" type="text" class="validate">
+              <input placeholder="Mot de passe" id="mdp"  name="mdp" type="text" class="validate" [(ngModel)]="mdp">
               <label for="mdp">Mot de passe</label>
             </div>
             <div class="input-field col s6">
-              <button class="waves-effect waves-light btn" (click)="login()">Se connecter</button>
+              <button class="waves-effect waves-light btn" type="submit" (click)="login()">Se connecter</button>
               <div>{{message}}</div>
             </div>
           </div>

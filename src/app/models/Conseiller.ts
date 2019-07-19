@@ -7,7 +7,7 @@ export class Conseiller {
     telephone: String;
     pseudo: String;
     mdp: String;
-    matricule: BigInteger;
+    matricule: number;
     
     constructor(id: number,
         nom: String,
@@ -17,7 +17,7 @@ export class Conseiller {
         telephone: String,
         pseudo: String,
         mdp: String,
-        matricule: BigInteger) {
+        matricule: number) {
             this.nom = nom;
             this.prenom = prenom;
             this.email = email;
